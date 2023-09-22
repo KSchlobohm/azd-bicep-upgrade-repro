@@ -29,7 +29,7 @@ var deploymentSettings = {
 }
 
 module azureMonitor './azure-monitor.bicep' = {
-  name: 'ken-azure-monitor'
+  name: 'monitor-${environmentName}'
   params: {
     resourceGroupName: rg.name
     deploymentSettings: deploymentSettings
